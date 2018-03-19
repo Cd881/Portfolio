@@ -23,7 +23,7 @@
 
 /* Nav Bar */
 #dropdown {
-    background-color: indianred;
+    background-color: rgba(0, 0, 0, 0.2);
     width: 100vw;
     height: 80px;
     position: absolute;
@@ -46,6 +46,7 @@
     width: 90px;
     height: 70px;
     z-index: 3;
+    cursor: pointer;
 }
 
 .cd {
@@ -61,7 +62,46 @@
 }
 
 /* Home Page */
+.home {
+    background: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2)),url(img/1.jpeg) top no-repeat;
+}
 
+.back, .next {
+    position: absolute;
+    top: 50%;
+    padding: 16px;
+    color: #eceeef;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.next {
+    right: 0;
+}
+
+.b {
+    cursor: pointer;
+    position: absolute;
+    top: 0px;
+    width: 2.4%;
+    height: 100vh;
+}
+
+.b:hover, 
+.n:hover {
+    animation-name: fade2;
+    animation-duration: .5s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+.n {
+    position: absolute;
+    top: 0px;
+    right: 0;
+    width: 2.4%;
+    height: 100vh;
+}
 
 /* About Me */
 .flex-container {
@@ -102,7 +142,8 @@ p {
 
 .divimg {
     overflow: hidden;
-    
+    width: 100vw;
+    height: 100vh;
 }
 
 /* Contact */
@@ -206,5 +247,11 @@ p {
 @keyframes fade {
     to {
         background-color: rgba(0, 0, 0, 0);
+    }
+}
+
+@keyframes fade2 {
+    to {
+        background-color: rgba(255, 255, 255, 0.172);
     }
 }

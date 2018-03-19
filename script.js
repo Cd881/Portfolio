@@ -1,4 +1,7 @@
 var console,
+    document,
+    setInterval,
+    clearInterval,
     x = 0,
     a,
     b,
@@ -63,3 +66,13 @@ function fadeOut() {
     }
     x = setInterval(fade, 3);
 }
+
+function quote() {
+    'use strict';
+}
+
+dropdown();
+dropup();
+overlayOff();
+fadeOut();
+quote();

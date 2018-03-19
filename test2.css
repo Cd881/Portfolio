@@ -1,0 +1,55 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+.cd {
+    stroke: black;
+    stroke-width: 5px;
+    fill: none;
+}
+
+.dunno {
+    stroke: black;
+    stroke-width: 1.5px;
+    fill: none;
+}
+
+.cd2 {
+    stroke: black;
+    stroke-width: 30px;
+    fill: none;
+}
+
+.dunno2 {
+    stroke: black;
+    stroke-width: 4px;
+    fill: none;
+}
+
+.svg-content {
+    display: inline;
+	position: absolute;
+	top: 0;
+	left: 0;
+    width: 90px;
+    height: 70px;
+}
+
+.svg-content2 {
+    width: 380px;
+    height: 300px;
+    position: absolute;
+	top: 400px;
+	left: 0;
+}
+
+.smallLogo:hover {
+    stroke: #4c4c4c;
+}
+
+@keyframes he {
+    to {
+        stroke: #4c4c4c;
+    }
+}

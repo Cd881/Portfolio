@@ -1,0 +1,210 @@
+@import url('https://fonts.googleapis.com/css?family=Overpass+Mono');
+
+* {
+    margin: 0px;
+    padding: 0;
+}
+
+.row {
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.centerp {
+    text-align: center;
+}
+
+/* Footer */
+.foot {
+    background-color: grey;
+    height: 50px;
+    width: 100%;
+}
+
+/* Nav Bar */
+#dropdown {
+    background-color: indianred;
+    width: 100vw;
+    height: 80px;
+    position: absolute;
+    z-index: 2;
+    top: 0px;
+}
+
+.nav {
+    position: fixed;
+    width: 100%;
+    height: 80px;
+    z-index: 2;
+}
+
+.svg-content {
+    display: inline;
+	position: relative;
+	top: 0;
+	left: 0;
+    width: 90px;
+    height: 70px;
+    z-index: 3;
+}
+
+.cd {
+    stroke: #eceeef;
+    stroke-width: 5px;
+    fill: none;
+}
+
+.dunno {
+    stroke: #eceeef;
+    stroke-width: 1.5px;
+    fill: none;
+}
+
+/* Home Page */
+
+
+/* About Me */
+.flex-container {
+    display: flex;
+    width: 40%;
+    flex-wrap: wrap;
+}
+
+.flex-container2 {
+    display: flex;
+    width: 20%;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+.flex-container2 img {
+    width: 200px;
+    height: 250px;
+}
+
+.flex-containermain {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.aboutme {
+    margin: 100px auto 100px auto ;
+}
+
+p {
+    font-size: 20px;
+}
+
+.img {
+    height: 100vh;
+    width: 100vw;
+}
+
+.divimg {
+    overflow: hidden;
+    
+}
+
+/* Contact */
+.flex-containerc {
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.left {
+    width: 25%;
+    height: 100%;
+    background: red;
+}
+
+.right {
+    width: 75%;
+    height: 100%;
+    background: blue;
+}
+
+/* Home Page Loading */
+.flexcont {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    flex-wrap: wrap;
+}
+
+.svg-content2 {
+    width: 380px;
+    height: 300px;
+}
+
+.dunno2 {
+    stroke: #eceeef;
+    stroke-width: 4px;
+    fill: none;
+    stroke-dasharray: 600px;
+    stroke-dashoffset: 600px;
+    animation-name: loop;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+.cd2 {
+    stroke: #eceeef;
+    stroke-width: 30px;
+    stroke-dasharray: 600px;
+    stroke-dashoffset: 600px;
+    fill: none;
+    animation-name: load;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+#overlay {
+    display: block;
+    position: fixed;
+    z-index: 5;
+    cursor: wait;
+    background-color: rgba(0, 0, 0, .7);
+    animation-name: fade;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-delay: 1s;
+}
+
+.help {
+    position: absolute;
+    bottom: 0px;
+    z-index: 6;
+    font-size: 20px;
+    font-family: 'Overpass Mono', monospace;
+    color: white;
+}
+
+/* Home Page Animations */
+@keyframes load {
+    0% {
+        stroke-dashoffset: 600px;
+    }
+    50% {
+        stroke-dashoffset: 0px;
+    }
+}
+
+@keyframes loop {
+    0% {
+        stroke-dashoffset: 600px;
+    }
+    50% {
+        stroke-dashoffset: 0px;
+    }
+}
+
+@keyframes fade {
+    to {
+        background-color: rgba(0, 0, 0, 0);
+    }
+}

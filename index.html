@@ -6,9 +6,10 @@
             <meta charset="UTF-8">
             <title>Home</title>
             <link rel="stylesheet" href="style.css">
+            <script type="text/javascript" src="script.js"></script>
         </head>
         
-        <body onload="setTimeout(overlayOff, 2700), setTimeout(dropup, 3500)">
+        <body id="home" onload="setTimeout(overlayOff, 2700), setTimeout(dropup, 3500)">
             <div id="overlay">
                 <div class="flexcont">
                     <svg class="svg-content2"> 
@@ -31,8 +32,15 @@
                                     <path class="cd" d="m 50.755961,15.991248 h 5.962635 v 0 0 c 8.404526,0 16.170644,4.483762 20.372907,11.762304 4.202263,7.278538 4.202263,16.246061 0,23.524604 C 72.88924,58.556694 65.123122,63.040459 56.718596,63.040459 H 54.229557 V 25.409518" />
                                 </g>
                             </svg>
-                            <div id="dropdown" onmouseout="dropup()">
-                                
+                            <div id="dropdown">
+                                <div class="nav-flex">
+                                    <ul onmouseover="dropdown()">
+                                        <a href="index.html"><li>Home</li></a>
+                                        <a href="aboutme.html"><li>About Me</li></a>
+                                        <a href="portfolio.html"><li>Portfolio</li></a>
+                                        <a href="contact.html"><li>Contact</li></a>
+                                    </ul>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -41,18 +49,30 @@
                     
                 </div>
             </header>
-                <div class="b" onclick="plusSlides(-1)">
+                <div class="b" onclick="quote(-1)">
                     <p class="back">&#10094;</p>
                 </div>
-                <div class="n" onclick="plusSlides(1)">
+                <div class="n" onclick="quote(1)">
                     <p class="next">&#10095;</p>
                 </div>
-<!--
-            <p>"Don't cry because it's over. Smile because it happened." - Dr. Seuss</p>
-            <p>"Two things are infinite: the universe and human stupidity; and I'm not sure about the universe." - Einstein</p>
-            <p>"An eye for an eye will only make the whole world blind." - Gandhi</p>
--->
-            <script type="text/javascript" src="script.js"></script>
+            <div id="q1" onmouseover="dropup()">
+                <div class="flex">
+                    <p>"Don't cry because it's over. Smile because it happened."</p>
+                    <p class="by">- Dr. Seuss</p>
+                </div>
+            </div>
+            <div id="q2" onmouseover="dropup()">
+                <div class="flex">
+                    <p>"Two things are infinite: the universe and human stupidity; and I'm not sure about the universe."</p>
+                    <p class="by">- Einstein</p>
+                </div>
+            </div>
+            <div id="q3" onmouseover="dropup()">
+                <div class="flex">
+                    <p>"An eye for an eye will only make the whole world blind."</p>
+                    <p class="by">- Gandhi</p>
+                </div>
+            </div>
         </body>
         
     </html>

@@ -31,11 +31,47 @@
     top: 0px;
 }
 
+#dropdown ul{
+    text-decoration: none;
+    list-style: none;
+    display: inline-block;
+}
+
+#dropdown ul li {
+    display: inline-block;
+    text-align: center;
+    padding: 10px;
+    height: 60px;
+    width: 90px;
+}
+
+#dropdown a {
+    text-decoration: none;
+    display: inline-block;
+    color: white;
+    font-size: 20px;
+}
+
+#dropdown a:hover {
+    color: blue;
+    background-color: aquamarine;
+}
+
+
+
 .nav {
     position: fixed;
     width: 100%;
     height: 80px;
     z-index: 2;
+}
+
+.nav-flex {
+    display: flex;
+    justify-content: flex-end;
+    flex-wrap: nowrap;
+    align-content: center;
+    align-items: center;
 }
 
 .svg-content {
@@ -62,29 +98,31 @@
 }
 
 /* Home Page */
-.home {
+#home .home {
     background: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2)),url(img/1.jpeg) top no-repeat;
 }
 
-.back, .next {
+#home .back, #home .next {
     position: absolute;
     top: 50%;
-    padding: 16px;
+    padding: 10px;
     color: #eceeef;
     font-weight: bold;
     font-size: 20px;
+    z-index: 1;
 }
 
-.next {
+#home .next {
     right: 0;
 }
 
-.b {
+#home .b {
     cursor: pointer;
     position: absolute;
     top: 0px;
     width: 2.4%;
     height: 100vh;
+    z-index: 1;
 }
 
 .b:hover, 
@@ -95,12 +133,68 @@
     animation-fill-mode: forwards;
 }
 
-.n {
+#home .n {
     position: absolute;
     top: 0px;
     right: 0;
     width: 2.4%;
     height: 100vh;
+    z-index: 1;
+}
+
+#home .flex {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+
+#home #q1 {
+    position: absolute;
+    top: 0px;
+    width: 100vw;
+    height: 100vh;
+    text-align: left;
+}
+
+#home #q1 p,
+#home #q2 p,
+#home #q3 p{
+    position: relative;
+    font-size: 40px;
+    color: #eceeef;
+    font-weight: bold;
+    text-shadow: 4px 4px 10px black;
+}
+
+#home #q1 .by,
+#home #q2 .by,
+#home #q3 .by{
+    font-weight: 100;
+    font-size: 35px;
+    width: 40%;
+}
+    
+
+#home #q2 {
+    position: absolute;
+    top: 0px;
+    width: 100vw;
+    height: 100vh;
+    left: -100%;
+    text-align: left;
+}
+
+#home #q3 {
+    position: absolute;
+    top: 0px;
+    width: 100vw;
+    height: 100vh;
+    left: -100%;
+    text-align: left;
 }
 
 /* About Me */

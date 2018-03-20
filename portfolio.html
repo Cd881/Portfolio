@@ -13,7 +13,7 @@
                 <nav>
                     <div>
                         <div class="nav">
-                            <svg class="svg-content" onclick="dropdown()"> 
+                            <svg class="svg-content" onmouseover="dropdown()"> 
                                 <g class="smallLogo">
                                     <path class="dunno" d="m 47.776944,10.055549 h -8.385699 v 0 c -10.516297,0 -20.585983,6.220456 -25.491903,14.71776 -4.9059193,8.497299 -4.9059193,20.93821 0,29.435509 4.90592,8.497305 14.975606,14.717763 25.491903,14.717763 v 0 0 h 8.385699" />
                                     <path class="dunno" d="m 47.776944,68.926581 h 8.385699 v 0 c 10.516289,0 20.233761,-5.610384 25.491906,-14.717763 5.258145,-9.10738 5.258145,-20.32813 0,-29.435509 -5.258145,-9.107382 -14.975617,-14.71776 -25.491906,-14.71776 v 0 h -8.385699" />
@@ -22,13 +22,20 @@
                                 </g>
                             </svg>
                             <div id="dropdown">
-                                
+                                <div class="nav-flex">
+                                    <ul onmouseover="dropdown()">
+                                        <a href="index.html"><li>Home</li></a>
+                                        <a href="aboutme.html"><li>About Me</li></a>
+                                        <a href="portfolio.html"><li>Portfolio</li></a>
+                                        <a href="contact.html"><li>Contact</li></a>
+                                    </ul>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </nav>
-                <div class="divimg">
-                    <img src="img/EarthHighRes.jpg">
+                <div class="divimg home">
+                    
                 </div>
             </header>
             

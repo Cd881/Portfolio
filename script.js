@@ -5,17 +5,16 @@ var console,
     x = 0,
     a,
     b,
-    elem = document.getElementById("dropdown");
+    slides = 1;
 
 function dropdown() {
     'use strict';
+    var elem = document.getElementById("dropdown");
     
     function down() {
         if (x === 0) {
-            console.log('interval b clear');
             clearInterval(a);
         } else {
-            console.log('how about this');
             x += 1;
             elem.style.top = x + "px";
         }
@@ -28,13 +27,12 @@ function dropdown() {
 
 function dropup() {
     'use strict';
+    var elem = document.getElementById("dropdown");
     
     function up() {
         if (x === -80) {
-            console.log('interval a clear');
             clearInterval(b);
         } else {
-            console.log('is this running?!');
             x -= 1;
             elem.style.top = x + "px";
         }
@@ -67,12 +65,42 @@ function fadeOut() {
     x = setInterval(fade, 3);
 }
 
-function quote() {
+function quote(num) {
     'use strict';
+    var doc1 = document.getElementById("q1"), 
+        doc2 = document.getElementById("q2"), 
+        doc3 = document.getElementById("q3");
+    
+    if (num === -1 && slides === 1) {
+        console.log("equal 3");
+        slides = 3;
+        console.log(slides);
+    } else if (num === 1 && slides === 3) {
+        console.log("equal 1");
+        slides = 1;
+        console.log(slides);
+    } else if (num === 1) {
+        console.log("+ 1");
+        slides += 1;
+        console.log(slides);
+    } else if (num === -1) {
+        console.log("- 1");
+        slides -= 1;
+        console.log(slides);
+    }
+    
+    if (slides === 1) {
+        doc1.style.left = 0 + "px";
+        doc2.style.left = -100 + "%";
+        doc3.style.left = -100 + "%";
+    } else if (slides === 2 ) {
+        doc1.style.left = -100 + "%";
+        doc2.style.left = 0 + "px";
+        doc3.style.left = -100 + "%";
+    } else if (slides === 3) {
+        doc1.style.left = -100 + "%";
+        doc2.style.left = -100 + "%";
+        doc3.style.left = 0 + "px";
+    }
+    
 }
-
-dropdown();
-dropup();
-overlayOff();
-fadeOut();
-quote();

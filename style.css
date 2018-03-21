@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Overpass+Mono');
+@import url('https://fonts.googleapis.com/css?family=Amatic+SC|Mina');
 
 * {
     margin: 0px;
@@ -40,9 +40,9 @@
 #dropdown ul li {
     display: inline-block;
     text-align: center;
-    padding: 10px;
-    height: 60px;
-    width: 90px;
+    padding: 23px 0px 23.55px 0px;
+    width: 95px;
+    font-family: 'Mina', sans-serif;
 }
 
 #dropdown a {
@@ -53,11 +53,15 @@
 }
 
 #dropdown a:hover {
-    color: blue;
-    background-color: aquamarine;
+    animation-name: navfade;
+    animation-duration: .7s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: 1;
 }
 
-
+.center {
+    margin: auto;
+}
 
 .nav {
     position: fixed;
@@ -86,20 +90,20 @@
 }
 
 .cd {
-    stroke: #eceeef;
+    stroke: #246d9f;
     stroke-width: 5px;
     fill: none;
 }
 
 .dunno {
-    stroke: #eceeef;
+    stroke: #246d9f;
     stroke-width: 1.5px;
     fill: none;
 }
 
 /* Home Page */
 #home .home {
-    background: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2)),url(img/1.jpeg) top no-repeat;
+    background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(img/home.jpg) top no-repeat;
 }
 
 #home .back, #home .next {
@@ -168,6 +172,7 @@
     color: #eceeef;
     font-weight: bold;
     text-shadow: 4px 4px 10px black;
+    font-family: 'Mina', sans-serif;
 }
 
 #home #q1 .by,
@@ -195,6 +200,12 @@
     height: 100vh;
     left: -100%;
     text-align: left;
+}
+
+.divimg {
+    overflow: hidden;
+    width: 100vw;
+    height: 100vh;
 }
 
 /* About Me */
@@ -225,6 +236,14 @@
     margin: 100px auto 100px auto ;
 }
 
+.aboutmepic {
+    background: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2)),url(img/aboutme.jpg) top no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    height: 50px;
+}
+
 p {
     font-size: 20px;
 }
@@ -234,10 +253,39 @@ p {
     width: 100vw;
 }
 
-.divimg {
+.divimg2 {
     overflow: hidden;
-    width: 100vw;
-    height: 100vh;
+    height: 50vh;
+}
+
+#aboutme {
+    background-color: #eceeef;
+}
+
+.angle {
+    width: 150vw;
+    height: 120px;
+    background-color: #eceeef;
+    position: relative;
+    left: -100px;
+    top: 30px;
+    transform: rotate(-2deg)
+}
+
+.cont-angle {
+    width: 100%;
+    height: 250px;
+    overflow: hidden;
+    position: absolute;
+    top: 410px;
+}
+
+.ab {
+    position: relative;
+    font-size: 50px;
+    text-align: center;
+    color: #246d9f;
+    font-family: 'Amatic SC', cursive;
 }
 
 /* Contact */
@@ -319,7 +367,7 @@ p {
     color: white;
 }
 
-/* Home Page Animations */
+/* Animations */
 @keyframes load {
     0% {
         stroke-dashoffset: 600px;
@@ -347,5 +395,12 @@ p {
 @keyframes fade2 {
     to {
         background-color: rgba(255, 255, 255, 0.172);
+    }
+}
+
+@keyframes navfade {
+    to {
+        color: black;
+        background-color: #eceeef;
     }
 }

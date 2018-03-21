@@ -72,21 +72,21 @@ function quote(num) {
         doc3 = document.getElementById("q3");
     
     if (num === -1 && slides === 1) {
-        console.log("equal 3");
+//        console.log("equal 3");
         slides = 3;
-        console.log(slides);
+//        console.log(slides);
     } else if (num === 1 && slides === 3) {
-        console.log("equal 1");
+//        console.log("equal 1");
         slides = 1;
-        console.log(slides);
+//        console.log(slides);
     } else if (num === 1) {
-        console.log("+ 1");
+//        console.log("+ 1");
         slides += 1;
-        console.log(slides);
+//        console.log(slides);
     } else if (num === -1) {
-        console.log("- 1");
+//        console.log("- 1");
         slides -= 1;
-        console.log(slides);
+//        console.log(slides);
     }
     
     if (slides === 1) {

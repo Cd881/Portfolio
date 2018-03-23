@@ -16,9 +16,35 @@
 
 /* Footer */
 .foot {
-    background-color: grey;
-    height: 50px;
+    background-color: rgba(0, 0, 0, 0.2);
+    height: 80px;
     width: 100%;
+}
+
+.foot ul {
+    list-style: none;
+    color: #eceeef;
+}
+
+.foot ul li {
+    display: inline-block;
+    padding: 30px 15px 30px 15px;
+    cursor: pointer;
+}
+
+.foot ul a {
+    text-decoration: none;
+    color: #eceeef;
+}
+
+.foot p {
+    padding: 30px;
+    color: #eceeef;
+}
+
+.flex {
+    display: flex;
+    justify-content: space-between;
 }
 
 /* Nav Bar */
@@ -27,7 +53,7 @@
     width: 100vw;
     height: 80px;
     position: absolute;
-    z-index: 2;
+    z-index: 5;
     top: 0px;
 }
 
@@ -73,7 +99,7 @@
     position: absolute;
     background-color: rgba(0, 0, 0, 0.2);
     min-width: 90px;
-    z-index: 1;
+    z-index: 4;
 }
 
 .c {
@@ -88,7 +114,7 @@
     position: fixed;
     width: 100%;
     height: 80px;
-    z-index: 2;
+    z-index: 5;
 }
 
 .nav-flex {
@@ -106,7 +132,7 @@
 	left: 0;
     width: 90px;
     height: 70px;
-    z-index: 3;
+    z-index: 6;
     cursor: pointer;
 }
 
@@ -248,56 +274,166 @@
 .flex-containermain div.cam img {
     width: 300px;
     height: 350px;
+    margin-top: 70px;
 }
 
 .flex-containermain div p {
-    font-size: 25px;
+    font-size: 20px;
+    font-family: 'Mina', sans-serif;
 }
 
 .aboutme {
-    margin: 100px auto 100px auto ;
+    margin: 50px auto auto auto ;
 }
 
-.aboutmepic {
+#aboutme {
     background: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2)),url(img/aboutme.jpg) top no-repeat;
     background-attachment: fixed;
     background-position: center;
     background-size: cover;
-    height: 50px;
+}
+
+#aboutme main {
+    position: relative;
+    z-index: 2;
+}
+
+.anglecont {
+    width: 100%;
+    height: 900px;
+    overflow: hidden;
+    position: absolute;
+    z-index: 0;
+    top: 35%;
+}
+
+.anglecont2 {
+    width: 100%;
+    height: 800px;
+    overflow: hidden;
+    position: absolute;
+    z-index: 0;
+    top: 75%;
+}
+
+.anglecont3 {
+    width: 100%;
+    height: 800px;
+    overflow: hidden;
+    position: absolute;
+    z-index: 1;
+    top: 55%;
+}
+
+.angle {
+    background-color: #eceeef;
+    transform: rotate(-10deg);
+    height: 600px;
+    width: 130vw;
+    position: relative;
+    left: -10%;
+    top: 20%;
+    box-shadow: 0px -2px 50px black;
+}
+
+.angle3 {
+    background-color: #eceeef;
+    transform: rotate(-10deg);
+    height: 400px;
+    width: 130vw;
+    position: relative;
+    left: -10%;
+    top: 20%;
+}
+
+.angle2 {
+    background-color: #eceeef;
+    transform: rotate(-10deg);
+    height: 400px;
+    width: 130vw;
+    position: relative;
+    left: -10%;
+    top: 20%;
+    box-shadow: 0px 2px 50px black;
 }
 
 .divimg2 {
     overflow: hidden;
-    height: 50vh;
+    height: 60vh;
 }
 
-#aboutme {
-    background-color: #eceeef;
-}
-
-.ab {
+#aboutme .ab {
     font-size: 50px;
     text-align: center;
     color: #246d9f;
     font-family: 'Amatic SC', cursive;
 }
 
+#aboutme h2 {
+    font-size: 35px;
+    text-align: center;
+    color: black;
+    font-family: 'Amatic SC', cursive;
+}
+
 /* Contact */
-.flex-containerc {
+#contact h3 {
+    font-size: 40px;
+    text-align: center;
+    color: #246d9f;
+    font-family: 'Amatic SC', cursive;
+}
+
+#contact main {
+    position: relative;
+    z-index: 2;
+}
+
+#contact h2 {
+    font-size: 35px;
+    text-align: center;
+    color: black;
+    font-family: 'Amatic SC', cursive;
+}
+
+#contact .ab {
+    font-size: 50px;
+    text-align: center;
+    color: #246d9f;
+    font-family: 'Amatic SC', cursive;
+}
+
+#contact {
+    background: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2)),url(img/contact.jpg) top no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+}
+
+.flexc {
     display: flex;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
+    flex-direction: column;
 }
 
-.left {
-    width: 25%;
-    height: 100%;
-    background: red;
+.flexc div p {
+    font-size: 20px;
+    font-family: 'Mina', sans-serif;
 }
 
-.right {
-    width: 75%;
-    height: 100%;
-    background: blue;
+.flexc div {
+    margin: auto auto 50px auto;
+}
+
+.flexc div form {
+    margin: 50px auto auto auto;
+}
+
+.flexc div form textarea {
+    max-height: 200px;
+    min-height: 200px;
+    max-width: 600px;
+    min-width: 600px;
 }
 
 /* Home Page Loading */

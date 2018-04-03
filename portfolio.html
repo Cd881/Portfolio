@@ -8,7 +8,8 @@
             <link rel="stylesheet" href="style.css">
         </head>
         
-        <body>
+        <body id="port">
+            
             <header>
                 <nav>
                     <div>
@@ -45,34 +46,50 @@
                         </div>
                     </div>
                 </nav>
-                <div class="" onmouseover="dropup()">
+                <div class="divimg2" onmouseover="dropup()">
                     
                 </div>
             </header>
             
-            <main>
-                <div class="row aboutme">
-                    <div class="flex-containermain">
-                        <div class="flex-container2">
-                            <h2>My Portfolio</h2>
-                        </div>
-                        <div class="flex-container2">
-                            <img src="http://via.placeholder.com/400x400" alt="">
-                        </div>
-                        <div class="flex-container2">
-                            <img src="http://via.placeholder.com/400x400" alt="">
-                        </div>
-                        <div class="flex-container2">
-                            <img src="http://via.placeholder.com/400x400" alt="">
-                        </div>
+            <div class="anglecont">
+                <div class="angle"></div>
+            </div>
+            <main onmouseover="dropup()">
+                <h2 class="ab">Portfolio</h2>
+                <div class="row flexp" onmouseover="dropup()">
+                    <div class="card">
+                        <a href="eng.html"><img src="http://via.placeholder.com/320x180" alt=""></a>
+                        <p>These are some examples of my writing assginments. These assignments are mostly from CART.
+                        <br>&nbsp;
+                        </p>
+                        <a class="but" href="eng.html"><div class="button"></div></a>
+                    </div>
+                    <div class="card">
+                        <img src="http://via.placeholder.com/320x180" alt="">
+                        <p>These are some examples of my web application development assginments. These examples are mostly websites that I have worked on through out the year.</p>
+                        <a class="but" href="eng.html"><div class="button"></div></a>
+                    </div>
+                    <div class="card">
+                        <img src="http://via.placeholder.com/320x180" alt="">
+                        <p>These are some examples of my artwork. I make some art everyonce and a while. These are all 100% CGI images.
+                        <br>&nbsp;</p>
+                        <a class="but" href="eng.html"><div class="button"></div></a>
                     </div>
                 </div>
             </main>
-            
-            <footer>
+            <div class="divimg2" onmouseover="dropup()"></div>
+            <footer onmouseover="dropup()">
                 <div class="foot">
-                    <p>(555)555-5555</p>
-                    <p>Cameron Dauer</p>
+                    <div class="flex">
+                        <p>Cameron Dauer &#124;&#124; (559) 765-5294</p>
+                        
+                        <ul>
+                        <a href="index.html"><li>Home</li></a>
+                        <a href="aboutme.html"><li>About Me</li></a>
+                        <a href="portfolio.html"><li>Portfolio</li></a>
+                        <a href="contact.html"><li>Contact</li></a>
+                        </ul>
+                    </div>
                 </div>
             </footer>
             <script type="text/javascript" src="script.js"></script>

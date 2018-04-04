@@ -14,6 +14,23 @@
     text-align: center;
 }
 
+.anglecont {
+    width: 100%;
+    overflow: hidden;
+    position: absolute;
+    z-index: 0;
+    top: 35%;
+}
+
+.angle {
+    background-color: #eceeef;
+    transform: rotate(-10deg);
+    width: 130vw;
+    position: relative;
+    left: -10%;
+    box-shadow: 0px -2px 50px black;
+}
+
 /* Nav Bar */
 #dropdown {
     background-color: rgba(0, 0, 0, 0.2);
@@ -36,6 +53,10 @@
     padding: 23px 0px 23.55px 0px;
     width: 95px;
     font-family: 'Mina', sans-serif;
+}
+
+.cccc {
+    margin-right: 15px;
 }
 
 #dropdown a {
@@ -67,10 +88,6 @@
     background-color: rgba(0, 0, 0, 0.2);
     min-width: 90px;
     z-index: 4;
-}
-
-.c {
-    padding-right: 10px;
 }
 
 .center {
@@ -195,6 +212,7 @@
     font-weight: 100;
     font-size: 35px;
     width: 40%;
+    color: #246d9f;
 }
     
 
@@ -234,13 +252,13 @@
 }
 
 .flex-containermain div.cam {
-    width: 25%;
-    padding: 0px 0px 0px 0px;
+    width: 23.5%;
+    padding: 0px 10px 0px 0px;
 }
 
 .flex-containermain div.cam img {
-    width: 300px;
-    height: 350px;
+    width: 100%;
+    height: auto;
     margin-top: 70px;
 }
 
@@ -265,63 +283,13 @@
     z-index: 2;
 }
 
-.anglecont {
-    width: 100%;
-    height: 900px;
-    overflow: hidden;
-    position: absolute;
-    z-index: 0;
-    top: 35%;
+#aboutme .angle {
+    height: 730px;
+    top: 12.8%;
 }
 
-.anglecont2 {
-    width: 100%;
-    height: 800px;
-    overflow: hidden;
-    position: absolute;
-    z-index: 0;
-    top: 75%;
-}
-
-.anglecont3 {
-    width: 100%;
-    height: 800px;
-    overflow: hidden;
-    position: absolute;
-    z-index: 1;
-    top: 55%;
-}
-
-.angle {
-    background-color: #eceeef;
-    transform: rotate(-10deg);
-    height: 600px;
-    width: 130vw;
-    position: relative;
-    left: -10%;
-    top: 20%;
-    box-shadow: 0px -2px 50px black;
-}
-
-.angle3 {
-    background-color: #eceeef;
-    transform: rotate(-10deg);
-    height: 400px;
-    width: 130vw;
-    position: relative;
-    left: -10%;
-    top: 20%;
-}
-
-.angle2 {
-    background-color: #eceeef;
-    transform: rotate(-10deg);
-    height: 400px;
-    width: 130vw;
-    position: relative;
-    left: -10%;
-    top: 20%;
-    box-shadow: 0px 2px 50px black;
+#aboutme .anglecont {
+    height: 150vh;
 }
 
 .divimg2 {
@@ -343,6 +311,65 @@
     font-family: 'Amatic SC', cursive;
 }
 
+/* Resume */
+#res .ab {
+    font-size: 50px;
+    text-align: center;
+    color: #246d9f;
+    font-family: 'Amatic SC', cursive;
+}
+
+#res main {
+    position: relative;
+    z-index: 2;
+}
+
+#res h2 {
+    font-size: 35px;
+    text-align: center;
+    color: black;
+    font-family: 'Amatic SC', cursive;
+}
+
+#res .angle {
+    height: 640px;
+    top: 16%;
+}
+
+#res .anglecont {
+    height: 120vh;
+}
+
+#res {
+    background: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2)),url(img/2.jpg) top no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+}
+
+#res h3 {
+    font-size: 24px;
+    font-family: 'Mina', sans-serif;
+}
+
+#res h4 {
+    font-size: 20px;
+    font-family: 'Mina', sans-serif;
+    margin-left: 10px;
+}
+
+#res h5 {
+    font-size: 16px;
+    font-family: 'Mina', sans-serif;
+    margin-left: 20px;
+}
+
+#res main ul {
+    margin-left: 50px;
+    font-size: 14px;
+    font-family: 'Mina', sans-serif;
+}
+
 /* Portfolio */
 #port h2 {
     font-size: 35px;
@@ -360,15 +387,15 @@
 
 #port .angle {
     height: 630px;
-    top: 12.8%;
+    top: 16%;
 }
 
 #port .anglecont {
-    height: 150vh;
+    height: 120vh;
 }
 
 #port {
-    background: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2)),url(img/aboutme.jpg) top no-repeat;
+    background: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2)),url(img/4.jpg) top no-repeat;
     background-attachment: fixed;
     background-position: center;
     background-size: cover;
@@ -377,6 +404,13 @@
 #port main {
     position: relative;
     z-index: 2;
+}
+
+#port main a {
+    text-decoration: none;
+    font-size: 20px;
+    font-family: 'Mina', sans-serif;
+    color: black;
 }
 
 .card {
@@ -407,7 +441,7 @@
     height: 50px;
     border-bottom-left-radius: 15px;
     border-bottom-right-radius: 15px;
-    margin-top: 10.5%;
+    margin-top: 9.6%;
 }
 
 .card:first-child {
@@ -494,6 +528,19 @@
     min-width: 600px;
 }
 
+#contact .angle {
+    height: 740px;
+    top: 15%;
+}
+
+#contact .anglecont {
+    height: 130vh;
+}
+
+#contact form input:last-child {
+    margin-bottom: 100%;
+}
+
 /* Footer */
 .foot {
     background-color: rgba(0, 0, 0, 0.2);
@@ -571,7 +618,7 @@
 #overlay {
     display: block;
     position: fixed;
-    z-index: 5;
+    z-index: 99999;
     cursor: wait;
     background-color: rgba(0, 0, 0, .7);
     animation-name: fade;
@@ -637,5 +684,6 @@
 @keyframes butfade {
     to {
         background-color: #246d9f;
+        color: #eceeef;
     }
 }

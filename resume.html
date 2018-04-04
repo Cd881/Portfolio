@@ -6,9 +6,10 @@
             <meta charset="UTF-8">
             <title>Resum&#233;</title>
             <link rel="stylesheet" href="style.css">
+            <script type="text/javascript" src="script.js"></script>
         </head>
         
-        <body id="resume">
+        <body id="res">
             
             <header>
                 <nav>
@@ -28,8 +29,14 @@
                                 <div class="nav-flex">
                                     <ul>
                                         <a href="index.html"><li>Home</li></a>
+                                        <div class="dropdown">
                                         <a href="aboutme.html"><li>About Me</li></a>
-                                        <a href="resume.html"><li>Resum&#233;</li></a>
+                                            <div class="dropdowncont">
+                                                <ul>
+                                                    <a href="resume.html"><li>Resume</li></a>
+                                                </ul>
+                                            </div>
+                                        </div>
                                         <div class="dropdown">
                                             <a href="portfolio.html"><li>Portfolio</li></a>
                                             <div class="dropdowncont">
@@ -40,7 +47,7 @@
                                                 </ul>
                                             </div>
                                         </div>
-                                        <a href="contact.html"><li>Contact</li></a>
+                                        <a href="contact.html"><li class="cccc">Contact</li></a>
                                     </ul>
                                 </div>
                             </div>
@@ -56,13 +63,12 @@
                 <div class="angle"></div>
             </div>
             <main onmouseover="dropup()">
-                <h2 class="ab">Resum&#233;</h2>
+                <h2 class="ab">Resume</h2>
                 <div class="row aboutme" onmouseover="dropup()">
                     <div class="flex-containermain">
                         <div class="cam">
-                            <img src="img/cam.jpg" alt="">
-                            <h2 class="centerp">Cameron Dauer Clovis, CA</h2>
-                            <a href="https://www.google.com" >LinkedIn</a>
+                            <img src="img/cam.jpg" alt="Picture of me">
+                            <h2 class="centerp">Cameron Dauer</h2>
                         </div>
                         <div>
                             <h3>Objective</h3>
@@ -86,15 +92,14 @@
                                         <li>Learned how to repair cables and how to make them</li>
                                         <li>Made a lesson for a presentation to teach people how to make a network</li>
                                     </ul>
-                                
-                                <h4>Buchanan High School</h4>
+                        </div>
+                        <div>
+                           <h4>Buchanan High School</h4>
                                     <ul>
                                         <li>College preparatory classes</li>
                                         <li>GPA 3.4</li>
                                         <li>BHS Energy Academy</li>
                                     </ul>
-                        </div>
-                        <div>
                             <h3>Work Experence</h3>
                                 <h4>Onetime Golf Apperal(Aug. 2016 - Mar. 2017)</h4>
                                     <ul>
@@ -110,13 +115,7 @@
                     </div>
                 </div>
             </main>
-            <div class="anglecont3">
-                <div class="angle3"></div>
-            </div>
             <div class="divimg2 aboutmepic" onmouseover="dropup()"></div>
-            <div class="anglecont2">
-                <div class="angle2"></div>
-            </div>
             <footer onmouseover="dropup()">
                 <div class="foot">
                     <div class="flex">
@@ -131,7 +130,6 @@
                     </div>
                 </div>
             </footer>
-            <script type="text/javascript" src="script.js"></script>
         </body>
         
     </html>

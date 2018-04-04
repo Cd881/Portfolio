@@ -39,7 +39,7 @@
                                                 </ul>
                                             </div>
                                         </div>
-                                        <a href="contact.html" class="c"><li>Contact</li></a>
+                                        <a href="contact.html" class="cccc"><li>Contact</li></a>
                                     </ul>
                                 </div>
                             </div>
@@ -63,21 +63,22 @@
                            <p>Cell: (559) 765-5294</p>
                         </div>
                         <div>
-                           <h3>Send an E-mail to me:</h3>
-                            <form action="mailto:cdauer881@gmail.com" method="post" enctype="text/plain">
+                           <h3>Send a message to me:</h3>
+                            <form name="contact" onsubmit="return validate()">
                                 <label for="name">Name:&nbsp;&nbsp;</label>
-                                <input type="text" name="name">
+                                <input type="text" name="name" placeholder="John Doe" required>
                                 <br>
                                 <br>
                                 <label for="ema">E-mail:&nbsp;</label>
-                                <input type="text" name="ema">
+                                <input type="email" name="ema" placeholder="example@domain.com" required>
                                 <label for="cell">Cell:&nbsp;</label>
-                                <input type="tel" name="cell">
+                                <input type="tel" name="cell" pattern="^\d{3}-\d{3}-\d{4}$" placeholder="555-555-5555" required>
+                                <label for="cell">(format: xxx-xxx-xxxx)</label>
                                 <br>
                                 <br>
                                 <label for="msg">Message:&nbsp;</label>
                                 <br>
-                                <textarea type="text" name="msg"></textarea>
+                                <textarea type="text" name="msg" required></textarea>
                                 <br>
                                 <input type="submit" value="Send">
                                 <input type="reset" value="Reset">
@@ -86,13 +87,6 @@
                     </div>
                 </div>
             </main>
-            <div class="anglecont3">
-                <div class="angle3"></div>
-            </div>
-            <div class="divimg2 aboutmepic" onmouseover="dropup()"></div>
-            <div class="anglecont2">
-                <div class="angle2"></div>
-            </div>
             <footer onmouseover="dropup()">
                 <div class="foot">
                     <div class="flex">

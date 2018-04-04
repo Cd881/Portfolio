@@ -67,8 +67,8 @@ function fadeOut() {
 
 function quote(num) {
     'use strict';
-    var doc1 = document.getElementById("q1"), 
-        doc2 = document.getElementById("q2"), 
+    var doc1 = document.getElementById("q1"),
+        doc2 = document.getElementById("q2"),
         doc3 = document.getElementById("q3");
     
     if (num === -1 && slides === 1) {
@@ -93,7 +93,7 @@ function quote(num) {
         doc1.style.left = 0 + "px";
         doc2.style.left = -100 + "%";
         doc3.style.left = -100 + "%";
-    } else if (slides === 2 ) {
+    } else if (slides === 2) {
         doc1.style.left = -100 + "%";
         doc2.style.left = 0 + "px";
         doc3.style.left = -100 + "%";

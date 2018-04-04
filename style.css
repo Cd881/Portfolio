@@ -247,13 +247,13 @@
 }
 
 .flex-containermain div {
-    width: 35%;
+    width: 34.7%;
     padding: 0px 30px 0px 0px;
 }
 
 .flex-containermain div.cam {
     width: 23.5%;
-    padding: 0px 10px 0px 0px;
+    padding: 0px 30px 0px 0px;
 }
 
 .flex-containermain div.cam img {

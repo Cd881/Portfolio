@@ -55,6 +55,13 @@
     font-family: 'Mina', sans-serif;
 }
 
+.dropup {
+    width: 100%;
+    height: 180px;
+    position: absolute;
+    z-index: 2;
+}
+
 .cccc {
     margin-right: 15px;
 }
@@ -466,6 +473,60 @@
 .flexp {
     display: flex;
     justify-content: space-around;
+}
+
+/* Web */
+#web {
+    background: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2)),url(img/4.jpg) top no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+}
+
+#web main {
+    position: relative;
+    z-index: 2;
+}
+
+#web .ab {
+    font-size: 50px;
+    text-align: center;
+    color: #246d9f;
+    font-family: 'Amatic SC', cursive;
+}
+
+#web .angle {
+    height: 1365px;
+    top: 9.5%;
+}
+
+#web .anglecont {
+    height: 210vh;
+}
+
+#web .flexweb {
+    display: flex;
+    justify-content: space-between;
+}
+
+#web .flexweb p {
+    width: 59%;
+    margin: auto;
+    font-size: 20px;
+    font-family: 'Mina', sans-serif;
+}
+
+#web .flexweb .img3 {
+    width: 39%;
+}
+
+.strips {
+   margin-bottom: 29%;
+}
+
+.img3 img {
+    width: 100%;
+    height: auto;
 }
 
 /* Contact */

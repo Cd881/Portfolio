@@ -4,17 +4,18 @@
        
         <head>
             <meta charset="UTF-8">
-            <title>About Me</title>
+            <title>Web &#124;&#124; Cameron Dauer</title>
             <link rel="stylesheet" href="style.css">
+            <script type="text/javascript" src="script.js"></script>
         </head>
         
-        <body>
+        <body id="web">
             
             <header>
                 <nav>
-                    <div>
-                        <div class="nav">
-                            <svg class="svg-content" onmouseover="dropdown()"> 
+                    <div class="nav" onmouseover="dropdown()">
+                        <a href="index.html">
+                               <svg class="svg-content"> 
                                 <g class="smallLogo">
                                     <path class="dunno" d="m 47.776944,10.055549 h -8.385699 v 0 c -10.516297,0 -20.585983,6.220456 -25.491903,14.71776 -4.9059193,8.497299 -4.9059193,20.93821 0,29.435509 4.90592,8.497305 14.975606,14.717763 25.491903,14.717763 v 0 0 h 8.385699" />
                                     <path class="dunno" d="m 47.776944,68.926581 h 8.385699 v 0 c 10.516289,0 20.233761,-5.610384 25.491906,-14.717763 5.258145,-9.10738 5.258145,-20.32813 0,-29.435509 -5.258145,-9.107382 -14.975617,-14.71776 -25.491906,-14.71776 v 0 h -8.385699" />
@@ -22,59 +23,85 @@
                                     <path class="cd" d="m 50.755961,15.991248 h 5.962635 v 0 0 c 8.404526,0 16.170644,4.483762 20.372907,11.762304 4.202263,7.278538 4.202263,16.246061 0,23.524604 C 72.88924,58.556694 65.123122,63.040459 56.718596,63.040459 H 54.229557 V 25.409518" />
                                 </g>
                             </svg>
-                            <div id="dropdown">
-                                <div class="nav-flex">
-                                    <ul onmouseover="dropdown()">
-                                        <a href="index.html"><li>Home</li></a>
-                                        <a href="aboutme.html"><li>About Me</li></a>
+                        </a>
+                        <div id="dropdown">
+                            <div class="nav-flex">
+                                <ul>
+                                    <a href="index.html"><li>Home</li></a>
+                                    <div class="dropdown">
+                                    <a href="aboutme.html"><li>About Me</li></a>
+                                        <div class="dropdowncont">
+                                            <ul>
+                                                <a href="resume.html"><li>Resume</li></a>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="dropdown">
                                         <a href="portfolio.html"><li>Portfolio</li></a>
-                                        <a href="contact.html"><li>Contact</li></a>
-                                    </ul>
-                                </div>
+                                        <div class="dropdowncont">
+                                            <ul>
+                                                <a href="webproj.html"><li>Web Projects</li></a>
+                                                <a href="eng.html"><li>Writting Examples</li></a>
+                                                <a href="art.html"><li>Artwork</li></a>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <a href="contact.html"><li class="cccc">Contact</li></a>
+                                </ul>
                             </div>
                         </div>
                     </div>
+                    <div class="dropup" onmouseover="dropup()"> </div>
                 </nav>
-                <div class="divimg home">
+                <div class="divimg2">
                     
                 </div>
             </header>
             
+            <div class="anglecont">
+                <div class="angle"></div>
+            </div>
             <main>
-                <main>
-                <div class="row">
-                    <div class="flex-containerc">
-                        <div class="left">
-                            <h2>My Art Work</h2>
+                <h2 class="ab">Web Projects</h2>
+                <div class="row aboutme">
+                    <div class="flexweb">
+                        <div class="img3">
+                            <img src="http://via.placeholder.com/500x350" alt="">
                         </div>
-                        <div class="right">
-                           <div>
-                                <img src="http://via.placeholder.com/950x500" alt="">
-                            </div>
-                            <div>
-                                <img src="http://via.placeholder.com/200x250" alt="">
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui impedit et dolore autem distinctio! Possimus, fugiat. Incidunt expedita possimus, officiis, magnam id repellendus. Delectus aliquam libero alias. A, magni, natus.</p>
-                            </div>
-                            <div>
-                                <img src="http://via.placeholder.com/200x250" alt="">
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui impedit et dolore autem distinctio! Possimus, fugiat. Incidunt expedita possimus, officiis, magnam id repellendus. Delectus aliquam libero alias. A, magni, natus.</p>
-                            </div>
-                            <div>
-                                <img src="http://via.placeholder.com/200x250" alt="">
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui impedit et dolore autem distinctio! Possimus, fugiat. Incidunt expedita possimus, officiis, magnam id repellendus. Delectus aliquam libero alias. A, magni, natus.</p>
-                            </div>
+                        <p>This was our first project of the year. My group had to make a website for an endangered species. My part of the project was to do the home page and most of the css. Since at the time I was the one of the few that knew basic css, my team had a little bit of an advantage but we still had a lot improving to do. We had a really big problem with media queries and we could never get them the way we wanted it to look. The whole point of this project was to reinforce our html coding skills which is exactly what it did.</p>
+                    </div>
+                </div>
+                <div class="row aboutme">
+                    <div class="flexweb">
+                        <div class="img3">
+                            <img src="http://via.placeholder.com/500x350" alt="">
                         </div>
+                        <p>This project was our first big team collaboration. It was our whole class working on one website. It got very hectic very fast. Git helped a lot in this development process. My part of the project was to work on the digital securities info. We had many conflicts when merging with git. This is when lines of code does not merge correctly and you have to go in and manually fix it. That was the biggest challenge of the project was all of the conflicts.</p>
+                    </div>
+                </div>
+                <div class="row aboutme strips">
+                    <div class="flexweb">
+                        <div class="img3">
+                            <img src="http://via.placeholder.com/500x350" alt="">
+                        </div>
+                        <p>Git is an important tool to use when you are working in a big group on the same project. Git allows you to collaborate in teams anywhere in the world. It also combines the code for you so you don’t have to. During the year we have learned to praise git. It is a very helpful tool to use when working in teams.</p>
                     </div>
                 </div>
             </main>
-            </main>
+            
             <footer>
                 <div class="foot">
-                    <p>(555)555-5555</p>
-                    <p>Cameron Dauer</p>
+                    <div class="flex">
+                        <p>Cameron Dauer &#124;&#124; (559) 765-5294</p>
+                        <ul>
+                        <a href="index.html"><li>Home</li></a>
+                        <a href="aboutme.html"><li>About Me</li></a>
+                        <a href="portfolio.html"><li>Portfolio</li></a>
+                        <a href="contact.html"><li>Contact</li></a>
+                        </ul>
+                    </div>
                 </div>
             </footer>
-            <script type="text/javascript" src="script.js"></script>
         </body>
         
     </html>

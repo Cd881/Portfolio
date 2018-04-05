@@ -6,7 +6,7 @@
             <meta charset="UTF-8">
             <title>English &#124;&#124; Cameron Dauer</title>
             <link rel="stylesheet" href="style.css">
-            <script type="text/javascript" src="script.js"></script>
+            <script src="script.js"></script>
         </head>
         
         <body id="web">
@@ -26,28 +26,26 @@
                         </a>
                         <div id="dropdown">
                             <div class="nav-flex">
-                                <ul>
-                                    <a href="index.html"><li>Home</li></a>
+                                <div>
+                                    <a href="index.html"><div><p>Home</p></div></a>
                                     <div class="dropdown">
-                                    <a href="aboutme.html"><li>About Me</li></a>
-                                        <div class="dropdowncont">
-                                            <ul>
-                                                <a href="resume.html"><li>Resume</li></a>
-                                            </ul>
+                                        <a href="aboutme.html"><div><p>About Me</p></div></a>
+                                        <div class="drop-cont">
+                                            <a href="resume.html"><div><p>Resume</p></div></a>
                                         </div>
                                     </div>
+                                    
                                     <div class="dropdown">
-                                        <a href="portfolio.html"><li>Portfolio</li></a>
-                                        <div class="dropdowncont">
-                                            <ul>
-                                                <a href="webproj.html"><li>Web Projects</li></a>
-                                                <a href="eng.html"><li>Writting Examples</li></a>
-                                                <a href="art.html"><li>Artwork</li></a>
-                                            </ul>
+                                        <a href="portfolio.html"><div><p>Portfolio</p></div></a>
+                                        <div class="drop-cont">
+                                            <a href="webproj.html"><div><p>Web</p></div></a>
+                                            <a href="eng.html"><div><p>Writing</p></div></a>
+                                            <a href="art.html"><div><p>Art</p></div></a>
                                         </div>
                                     </div>
-                                    <a href="contact.html"><li class="cccc">Contact</li></a>
-                                </ul>
+                                    
+                                    <a class="cc" href="contact.html"><div><p>Contact</p></div></a>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -66,7 +64,7 @@
                 <div class="row aboutme">
                     <div class="flexweb">
                         <div class="img3">
-                            <img src="http://via.placeholder.com/500x350" alt="">
+                            <img src="img/eng1.jpg" alt="">
                         </div>
                         <p>I selected this because it ties together with the Digital Ethics Website from my web projects. We first had to write this essay then we could start our work on the website. I formatted this in MLA.</p>
                     </div>
@@ -74,7 +72,7 @@
                 <div class="row aboutme">
                     <div class="flexweb">
                         <div class="img3">
-                            <img src="http://via.placeholder.com/500x350" alt="">
+                            <img src="img/eng2.jpg" alt="">
                         </div>
                         <p>This was a journal we had to write for a book we read at CART. This book was Ready Player One. This was a really good book, and I would recommend it if you have not read it.</p>
                     </div>
@@ -82,23 +80,24 @@
                 <div class="row aboutme strips">
                     <div class="flexweb">
                         <div class="img3">
-                            <img src="http://via.placeholder.com/500x350" alt="">
+                            <img src="img/eng3.jpg" alt="">
                         </div>
                         <p>This example is from my economy class. This essay was formatted in MLA. I chose this because it was part of a big project where we had to learn how to budget money for a month on a minimum wage job. This helped us prepare for the life after high school.</p>
                     </div>
                 </div>
             </main>
             
-            <footer>
+            <footer onmouseover="dropup()">
                 <div class="foot">
                     <div class="flex">
                         <p>Cameron Dauer &#124;&#124; (559) 765-5294</p>
-                        <ul>
-                        <a href="index.html"><li>Home</li></a>
-                        <a href="aboutme.html"><li>About Me</li></a>
-                        <a href="portfolio.html"><li>Portfolio</li></a>
-                        <a href="contact.html"><li>Contact</li></a>
-                        </ul>
+                        
+                        <div>
+                        <a href="index.html"><p>Home</p></a>
+                        <a href="aboutme.html"><p>About Me</p></a>
+                        <a href="portfolio.html"><p>Portfolio</p></a>
+                        <a href="contact.html"><p>Contact</p></a>
+                        </div>
                     </div>
                 </div>
             </footer>

@@ -6,6 +6,7 @@
             <meta charset="UTF-8">
             <title>Contact &#124;&#124; Cameron Dauer</title>
             <link rel="stylesheet" href="style.css">
+            <script src="script.js"></script>
         </head>
         
         <body id="contact">
@@ -25,28 +26,26 @@
                         </a>
                         <div id="dropdown">
                             <div class="nav-flex">
-                                <ul>
-                                    <a href="index.html"><li>Home</li></a>
+                                <div>
+                                    <a href="index.html"><div><p>Home</p></div></a>
                                     <div class="dropdown">
-                                    <a href="aboutme.html"><li>About Me</li></a>
-                                        <div class="dropdowncont">
-                                            <ul>
-                                                <a href="resume.html"><li>Resume</li></a>
-                                            </ul>
+                                        <a href="aboutme.html"><div><p>About Me</p></div></a>
+                                        <div class="drop-cont">
+                                            <a href="resume.html"><div><p>Resume</p></div></a>
                                         </div>
                                     </div>
+                                    
                                     <div class="dropdown">
-                                        <a href="portfolio.html"><li>Portfolio</li></a>
-                                        <div class="dropdowncont">
-                                            <ul>
-                                                <a href="webproj.html"><li>Web Projects</li></a>
-                                                <a href="eng.html"><li>Writting Examples</li></a>
-                                                <a href="art.html"><li>Artwork</li></a>
-                                            </ul>
+                                        <a href="portfolio.html"><div><p>Portfolio</p></div></a>
+                                        <div class="drop-cont">
+                                            <a href="webproj.html"><div><p>Web</p></div></a>
+                                            <a href="eng.html"><div><p>Writing</p></div></a>
+                                            <a href="art.html"><div><p>Art</p></div></a>
                                         </div>
                                     </div>
-                                    <a href="contact.html"><li class="cccc">Contact</li></a>
-                                </ul>
+                                    
+                                    <a class="cc" href="contact.html"><div><p>Contact</p></div></a>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -71,20 +70,20 @@
                         <div>
                            <h3>Send a message to me:</h3>
                             <form name="contact" onsubmit="return validate()">
-                                <label for="name">Name:&nbsp;&nbsp;</label>
+                                <label>Name:&nbsp;&nbsp;</label>
                                 <input type="text" name="name" placeholder="John Doe" required>
                                 <br>
                                 <br>
-                                <label for="ema">E-mail:&nbsp;</label>
+                                <label>E-mail:&nbsp;</label>
                                 <input type="email" name="ema" placeholder="example@domain.com" required>
-                                <label for="cell">Cell:&nbsp;</label>
+                                <label>Cell:&nbsp;</label>
                                 <input type="tel" name="cell" pattern="^\d{3}-\d{3}-\d{4}$" placeholder="555-555-5555" required>
-                                <label for="cell">(format: xxx-xxx-xxxx)</label>
+                                <label>(format: xxx-xxx-xxxx)</label>
                                 <br>
                                 <br>
-                                <label for="msg">Message:&nbsp;</label>
+                                <label>Message:&nbsp;</label>
                                 <br>
-                                <textarea type="text" name="msg" required></textarea>
+                                <textarea name="msg" required></textarea>
                                 <br>
                                 <input type="submit" value="Send">
                                 <input type="reset" value="Reset">
@@ -98,16 +97,15 @@
                     <div class="flex">
                         <p>Cameron Dauer &#124;&#124; (559) 765-5294</p>
                         
-                        <ul>
-                        <a href="index.html"><li>Home</li></a>
-                        <a href="aboutme.html"><li>About Me</li></a>
-                        <a href="portfolio.html"><li>Portfolio</li></a>
-                        <a href="contact.html"><li>Contact</li></a>
-                        </ul>
+                        <div>
+                        <a href="index.html"><p>Home</p></a>
+                        <a href="aboutme.html"><p>About Me</p></a>
+                        <a href="portfolio.html"><p>Portfolio</p></a>
+                        <a href="contact.html"><p>Contact</p></a>
+                        </div>
                     </div>
                 </div>
             </footer>
-            <script type="text/javascript" src="script.js"></script>
         </body>
         
     </html>

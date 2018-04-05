@@ -32,6 +32,41 @@
 }
 
 /* Nav Bar */
+#dropdown div a {
+    text-decoration: none;
+    color: #eceeef;
+    font-size: 20px;
+    font-family: 'Mina', sans-serif;
+    display: inline-block;
+}
+
+#dropdown div a div {
+    width: 95px;
+    padding: 24px 0px 22.8px 0px
+}
+
+#dropdown a:hover div {
+    animation-name: navfade;
+    animation-duration: 500ms;
+    animation-fill-mode: forwards;
+}
+
+#dropdown p {
+    text-align: center;
+}
+
+.drop-cont {
+    display: none;
+    background-color: rgba(0, 0, 0, 0.2);
+    position: absolute;
+    z-index: 1;
+}
+
+.dropdown:hover .drop-cont {
+    display: block;
+}
+
+
 #dropdown {
     background-color: rgba(0, 0, 0, 0.2);
     width: 100vw;
@@ -41,20 +76,6 @@
     top: 0px;
 }
 
-#dropdown ul{
-    text-decoration: none;
-    list-style: none;
-    display: inline-block;
-}
-
-#dropdown ul li {
-    display: inline-block;
-    text-align: center;
-    padding: 23px 0px 23.55px 0px;
-    width: 95px;
-    font-family: 'Mina', sans-serif;
-}
-
 .dropup {
     width: 100%;
     height: 180px;
@@ -62,43 +83,13 @@
     z-index: 2;
 }
 
-.cccc {
-    margin-right: 15px;
-}
-
-#dropdown a {
-    text-decoration: none;
-    display: inline-block;
-    color: white;
-    font-size: 20px;
-}
-
-#dropdown a:hover {
-    animation-name: navfade;
-    animation-duration: .7s;
-    animation-fill-mode: forwards;
-    animation-iteration-count: 1;
+.cc {
+    margin-right: 16px;
 }
 
 .dropdown {
     position: relative;
     display: inline-block;
-}
-
-.dropdown:hover .dropdowncont {
-    display: block;
-}
-
-.dropdowncont {
-    display: none;
-    position: absolute;
-    background-color: rgba(0, 0, 0, 0.2);
-    min-width: 90px;
-    z-index: 4;
-}
-
-.center {
-    margin: auto;
 }
 
 .nav {
@@ -371,6 +362,16 @@
     margin-left: 20px;
 }
 
+#res .cam a {
+    text-decoration: none;
+    color: #246d9f;
+    text-align: center;
+}
+
+#res .cam a:hover {
+    color: #2f90d0;
+}
+
 #res main ul {
     margin-left: 50px;
     font-size: 14px;
@@ -616,7 +617,7 @@
     color: #eceeef;
 }
 
-.foot ul li {
+.foot p {
     display: inline-block;
     padding: 30px 15px 30px 15px;
     cursor: pointer;

@@ -5,6 +5,14 @@
     padding: 0;
 }
 
+.support {
+    display: none;
+    position: fixed;
+    top: 0px;
+    width: 100vw;
+    height: 100vh;
+}
+
 .row {
     max-width: 1280px;
     margin: 0 auto;
@@ -279,6 +287,10 @@
 #aboutme main {
     position: relative;
     z-index: 2;
+}
+
+#aboutme .snad {
+    display: none;
 }
 
 #aboutme .angle {
@@ -747,5 +759,503 @@
     to {
         background-color: #246d9f;
         color: #eceeef;
+    }
+}
+
+@media screen and (max-width: 1743px) and (min-width: 1524px) {
+    #home #q1 p,
+    #home #q2 p,
+    #home #q3 p{
+        font-size: 35px;
+    }
+    
+    #home #q1 .by,
+    #home #q2 .by,
+    #home #q3 .by{
+        font-size: 30px;
+    }
+}
+
+@media screen and (max-width: 1524px) and (min-width: 1308px) {
+    #home #q1 p,
+    #home #q2 p,
+    #home #q3 p{
+        font-size: 30px;
+    }
+    
+    #home #q1 .by,
+    #home #q2 .by,
+    #home #q3 .by{
+        font-size: 25px;
+    }
+}
+
+@media screen and (max-width: 1307px) and (min-width: 1189px) {
+    #home #q1 p,
+    #home #q2 p,
+    #home #q3 p{
+        font-size: 25px;
+    }
+    
+    #home #q1 .by,
+    #home #q2 .by,
+    #home #q3 .by{
+        font-size: 20px;
+    }
+    
+    #aboutme .snad {
+        display: flex;
+    }
+    
+    #aboutme .snad2 {
+        display: none;
+    }
+    
+    #aboutme .flex-containermain div {
+        width: 73%;
+        padding: 0px 10px 0px 0px;
+    }
+    
+    #aboutme .flex-containermain .cam {
+        width: 25%;
+    }
+    
+    #aboutme .angle {
+        height: 770px;
+        top: 12.8%;
+    }
+}
+
+@media screen and (max-width: 1188px) and (min-width: 1090px) {
+    #home #q1 p,
+    #home #q2 p,
+    #home #q3 p{
+        font-size: 25px;
+    }
+    
+    #home #q1 .by,
+    #home #q2 .by,
+    #home #q3 .by{
+        font-size: 20px;
+    }
+    
+    #aboutme .snad {
+        display: flex;
+    }
+    
+    #aboutme .snad2 {
+        display: none;
+    }
+    
+    #aboutme .flex-containermain div {
+        width: 70%;
+        padding: 0px 10px 0px 0px;
+    }
+    
+    #aboutme .flex-containermain .cam {
+        width: 25%;
+    }
+    
+    #aboutme .angle {
+        height: 820px;
+        top: 12.8%;
+    }
+}
+
+@media screen and (max-width: 1089px) and (min-width: 928px) {
+    #home #q1 p,
+    #home #q2 p,
+    #home #q3 p{
+        font-size: 25px;
+    }
+    
+    .md {
+        padding: 20px;
+    }
+    
+    #home #q1 .by,
+    #home #q2 .by,
+    #home #q3 .by{
+        font-size: 20px;
+    }
+    
+    #aboutme .snad {
+        display: flex;
+    }
+    
+    #aboutme .snad2 {
+        display: none;
+    }
+    
+    #aboutme .flex-containermain div {
+        width: 65%;
+        padding: 0px 10px 0px 10px;
+    }
+    
+    #aboutme .flex-containermain .cam {
+        width: 20%;
+        padding: 0px 10px 0px 10px;
+    }
+    
+    #aboutme .angle {
+        height: 890px;
+        top: 12.8%;
+    }
+}
+
+@media screen and (max-width: 927px) and (min-width: 817px) {
+    #home #q1 p,
+    #home #q2 p,
+    #home #q3 p{
+        font-size: 25px;
+    }
+    
+    .md {
+        padding: 20px;
+    }
+    
+    #home #q1 .by,
+    #home #q2 .by,
+    #home #q3 .by{
+        font-size: 20px;
+    }
+    
+    #aboutme .snad {
+        display: flex;
+    }
+    
+    #aboutme .snad2 {
+        display: none;
+    }
+    
+    #aboutme .flex-containermain div {
+        width: 73%;
+        padding: 0px 10px 0px 10px;
+    }
+    
+    #aboutme .flex-containermain div p {
+        font-size: 18px;
+    }
+    
+    #aboutme .flex-containermain .cam {
+        width: 22%;
+        padding: 0px 0px 0px 10px;
+    }
+    
+    #aboutme .angle {
+        height: 830px;
+        top: 12.8%;
+    }
+}
+
+@media screen and (max-width: 816px) and (min-width: 747px) {
+    #home #q1 p,
+    #home #q2 p,
+    #home #q3 p{
+        font-size: 25px;
+    }
+    
+    .md {
+        padding: 20px;
+    }
+    
+    #home #q1 .by,
+    #home #q2 .by,
+    #home #q3 .by{
+        font-size: 20px;
+    }
+    
+    #aboutme .snad {
+        display: flex;
+    }
+    
+    #aboutme .snad2 {
+        display: none;
+    }
+    
+    #aboutme .flex-containermain div {
+        width: 70%;
+        padding: 0px 10px 0px 10px;
+    }
+    
+    #aboutme main h2.ab {
+        font-size: 40px;
+    }
+    
+    #aboutme main h2 {
+        font-size: 30px;
+    }
+    
+    .aboutme {
+        margin: 20px auto auto auto;
+    }
+    
+    #aboutme .flex-containermain div p {
+        font-size: 18px;
+    }
+    
+    #aboutme .flex-containermain .cam {
+        width: 22%;
+        padding: 0px 0px 0px 10px;
+    }
+    
+    #aboutme .angle {
+        height: 830px;
+        top: 16%;
+    }
+    
+    .angle {
+        left: -20%;
+    }
+    
+    .foot p{
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width: 746px) and (min-width: 509px) {
+    #home #q1 p,
+    #home #q2 p,
+    #home #q3 p{
+        font-size: 25px;
+    }
+    
+    .md {
+        padding: 20px;
+    }
+    
+    #home #q1 .by,
+    #home #q2 .by,
+    #home #q3 .by{
+        font-size: 20px;
+    }
+    
+    #aboutme .snad {
+        display: flex;
+    }
+    
+    #aboutme .snad2 {
+        display: none;
+    }
+    
+    .aboutme {
+        margin: 20px auto auto auto;
+    }
+    
+    #aboutme .flex-containermain div {
+        width: 70%;
+        padding: 0px 10px 0px 10px;
+    }
+    
+    #aboutme .flex-containermain div p {
+        font-size: 15px;
+    }
+    
+    #aboutme main h2.ab {
+        font-size: 35px;
+    }
+    
+    #aboutme main h2 {
+        font-size: 25px;
+    }
+    
+    #aboutme .flex-containermain .cam {
+        width: 22%;
+        padding: 0px 0px 0px 10px;
+    }
+    
+    #aboutme .angle {
+        height: 710px;
+        top: 16%;
+    }
+    
+    .angle {
+        width: 140vw;
+        left: -20%;
+    }
+    
+    .foot p{
+        font-size: 15px;
+        padding: 20px;
+    }
+    .foot .flex div {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 508px) and (min-width: 489px) {
+    #home #q1 p,
+    #home #q2 p,
+    #home #q3 p{
+        font-size: 25px;
+    }
+    
+    .md {
+        padding: 20px;
+    }
+    
+    #home #q1 .by,
+    #home #q2 .by,
+    #home #q3 .by{
+        font-size: 20px;
+    }
+    
+    #aboutme .snad {
+        display: flex;
+    }
+    
+    #aboutme .snad2 {
+        display: none;
+    }
+    
+    .aboutme {
+        margin: 20px auto auto auto;
+    }
+    
+    #aboutme .flex-containermain div {
+        width: 70%;
+        padding: 0px 10px 0px 10px;
+    }
+    
+    #aboutme .flex-containermain div p {
+        font-size: 15px;
+    }
+    
+    #aboutme main h2.ab {
+        font-size: 35px;
+    }
+    
+    #aboutme main h2 {
+        font-size: 25px;
+        display: none;
+    }
+    
+    #aboutme .flex-containermain .cam {
+        width: 22%;
+        padding: 0px 0px 0px 10px;
+    }
+    
+    #aboutme .angle {
+        height: 760px;
+        top: 16%;
+    }
+    
+    .angle {
+        width: 140vw;
+        left: -20%;
+    }
+    
+    .foot p{
+        font-size: 15px;
+        padding: 20px;
+    }
+    .foot .flex div {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 488px) and (min-width: 401px) {
+/*    navbar     */
+    #dropdown p {
+        font-size: 15px;
+    }
+    
+    #dropdown div a div {
+        width: 70px;
+        padding: 28px 0px 28px 0px;
+    }
+    #home #q1 p,
+    #home #q2 p,
+    #home #q3 p{
+        font-size: 25px;
+    }
+    
+    .md {
+        padding: 20px;
+    }
+    
+    #home #q1 .by,
+    #home #q2 .by,
+    #home #q3 .by{
+        font-size: 20px;
+    }
+    
+    #aboutme .snad {
+        display: flex;
+    }
+    
+    #aboutme .snad2 {
+        display: none;
+    }
+    
+    #aboutme .flex-containermain div {
+        width: 98%;
+        padding: 0px 10px 0px 10px;
+    }
+    
+    .aboutme {
+        margin: 20px auto auto auto;
+    }
+    
+    #aboutme .flex-containermain div p {
+        font-size: 15px;
+    }
+    
+    #aboutme main h2.ab {
+        font-size: 40px;
+        display: block;
+    }
+    
+    #aboutme main h2 {
+        font-size: 30px;
+        display: none;
+    }
+    
+    #aboutme .flex-containermain .cam {
+        width: 22%;
+        padding: 0px 0px 0px 10px;
+        display: none;
+    }
+    
+    #aboutme .angle {
+        height: 700px;
+        top: 16%;
+    }
+    
+    .angle {
+        width: 140vw;
+        left: -20%;
+    }
+    
+    .foot p{
+        font-size: 15px;
+        padding: 20px;
+    }
+    .foot .flex div {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    main,
+    nav,
+    footer,
+    div,
+    #overlay{
+        display: none;
+    }
+    
+    div.support {
+        display: block;
+        width: 100vw;
+        height: 100vh;
+        background-color: white;
+        font-size: 50px;
+        text-align: center;
+    }
+    
+    div.support p {
+        display: block;
+        margin-top: 50px;
     }
 }
